@@ -1,0 +1,59 @@
+
+
+.memorials {
+	padding: 18px 40px;
+	@media screen and (max-width: 960px) {
+		padding: 0;
+	}
+	&-wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 24px 0;
+		margin-top: 50px;
+		@media screen and (max-width: 960px) {
+			margin-top: 24px;
+		}
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&-image {
+		width: 94px;
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+	&-content {
+		width: calc(100% - 94px);
+		padding-left: 40px;
+		@media screen and (max-width: 767px) {
+			padding-left: 20px;
+		}
+	}
+	&-title {
+		display: block;
+	    font-size: 17.3px;
+	    color: #8b2562;
+	    padding: 0 0 4px 4px;
+	    font-weight: 700;
+	    text-decoration: underline;
+	}
+	&-holder {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 10px 15px;
+	}
+	&-date {
+		font-size: 17.3px;
+		color: #636363;
+	}
+	&-info {
+		font-size: 14.6667px;
+		color: #4f4f4f;
+		text-decoration: underline;
+	}
+}

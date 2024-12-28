@@ -1,0 +1,100 @@
+/* type one */ 
+
+.box {
+  &-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &-area {
+    padding-top: 34px;
+    padding-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      padding-top: 0px;
+    }
+  }
+}
+
+.label-inner {
+  min-width: 106px;
+  text-align: right;
+  flex-shrink: 0;
+  font-size: 13.3px;
+  color: #636363;
+  padding-right: 4px;
+}
+.input-inner {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: inset 0 2px 2px #8f8f8f;
+  font-size: 14.6667px;
+  color: #313131;
+  padding: 4px 2px;
+  border: 1px solid #a8a8a8;
+  outline: none;
+  border-radius: 3px;
+  font-weight: 700; 
+  &:focus {
+     box-shadow: 0 0 5px #85b2cb,inset 0 2px 2px #8f8f8f;
+  }
+}
+
+.area {
+  resize: none;
+  min-height: 170px;
+}
+
+/* type two */ 
+.input {
+  display: block; 
+  max-width: 100%;
+  width: 100%;  
+  box-shadow: inset 0px 0px 5px 1px #cfcfcf;
+  background: #fff;
+  border: 1px solid #929292;
+  padding: 4px 2px;
+  &.year {
+    max-width: 60px;
+  }
+}
+
+.label {
+  display: block;
+  font-size: 13.3px;
+  color: #fff;
+  padding-top: 5px; 
+}
+
+.line {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  input {
+    max-width: 34px;
+  }
+}
+
+.box {
+  &.surname {
+    max-width: 188px;
+    width: 100%;  
+    margin-right: 15px;
+    @media screen and (max-width: 840px) {
+      max-width: 164px;
+    }
+    @media screen and (max-width: 359px) {
+      max-width: 152px;
+    }
+  }
+  &.initials {
+    margin-right: 34px;
+  }
+  &.years {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

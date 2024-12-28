@@ -1,0 +1,136 @@
+
+.contacts {
+	background-image: linear-gradient(to right, #e8e8e8 60%, #ceb2c2 40%);
+	border: 1px solid #7a7a7a;
+	padding: 5px 6px;
+	padding-bottom: 10px;	
+	margin-top: 20px;
+	@media screen and (max-width: 767px) {
+		background: #e0e0e0;
+	}
+	&.call {
+		.btn {
+			padding: 4px 25px;
+		}
+	}
+	&-head {
+		.block-title {
+			padding-top: 20px;	
+			text-align: center;
+		}
+	}
+	&-title {
+		font-size: 17.3333px;
+		color: #8b2562;
+		text-align: center;
+		padding-top: 2px;
+		padding-bottom: 12px;
+		font-weight: 700;
+	}
+	&-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		.contacts-elem {
+			max-width: 100%;
+			&:first-child {
+				width: 60%;
+				@media screen and (max-width: 960px) {
+					width: 100%;	
+					padding-right: 0;
+				}
+			}
+			&:last-child {
+				width: 40%;
+				padding-right: 0;
+				@media screen and (max-width: 960px) {
+					width: 100%;
+					order: -1;	
+				}
+				.label-inner {
+					min-width: 62px;
+					@media screen and (max-width: 960px) {
+						min-width: 106px;
+					}
+				}
+				.box-inner {
+					max-width: 246px;
+					margin-left: auto;
+					@media screen and (max-width: 960px) {
+						max-width: 100%;
+						margin-left: 0px;
+						flex: 1;	
+					}
+				}
+			}
+		}
+	}
+	&-elem {
+		max-width: 60%;
+		padding-right: 24px;
+		@media screen and (max-width: 840px) {
+	      padding-right: 10px;
+	    }
+		@media screen and (max-width: 767px) {
+			max-width: 100%;
+			padding-right: 0;	
+		}
+	}
+	&-inner {
+		.btn {
+			padding: 9px 25px;
+		}
+	}
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media screen and (max-width: 374px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+		}
+	}
+	&-date {
+		width: calc(100% - 60px);
+		max-width: 184px;
+		display: flex;
+		margin-left: auto;
+		gap: 4px;
+		@media screen and (max-width: 960px) {
+			width: calc(100% - 106px);
+			max-width: 100%;
+		}
+		@media screen and (max-width: 399px) {
+			width: 100%;	
+			flex-direction: column;
+		}
+		.box-inner {
+			flex-direction: column-reverse;
+			@media screen and (max-width: 399px) {
+				flex-direction: row;
+			}
+		}
+		.label-inner {
+			padding-top: 2px;	
+		}
+	}
+	&-attach {
+		max-width: 60%;
+		font-size: 13.3px;	
+		margin-bottom: 10px;
+		@media screen and (max-width: 767px) {	
+		    text-align: center;
+		    max-width: 100%;
+		}
+		p {
+			@media screen and (max-width: 767px) {
+				padding-bottom: 4px;	
+			}
+		}
+	}
+	&-file {
+		box-shadow: inset 0px 0px 5px 1px #cfcfcf;
+        background: #fff;
+        border: 1px solid #929292;
+	}
+}

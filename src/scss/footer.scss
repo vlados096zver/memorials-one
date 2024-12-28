@@ -1,0 +1,11 @@
+
+.footer {
+	background-color: rgb(155, 168, 175);
+	&-elem {
+		font-size: 15px;	
+		line-height: 1.2;
+		color: #fff;
+		padding: 4px 6px 4px 6px;
+		text-align: center;
+	}
+}

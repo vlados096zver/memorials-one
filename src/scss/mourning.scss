@@ -1,0 +1,36 @@
+
+
+.mourning {
+	&-title {
+	  font-size: 21.3333px;
+	  color: #8b2562;
+	  margin-bottom: 20px;
+	  font-weight: 700;
+	  &+.block-text {
+	  	padding-top: 30px;	
+	  	@media screen and (max-width: 767px) {
+	  		padding-top: 14px;	
+	  	}
+	  }
+	}
+	&-text {
+		h2 {
+			font-size: 24px;
+			color: #444;
+			padding-bottom: 16px;
+			@media screen and (max-width: 767px) {
+				font-size: 22px;
+			}
+		}
+		p {
+			color: #444;
+			font-size: 16px;
+			padding-bottom: 16px;
+			a {
+				color: inherit;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+

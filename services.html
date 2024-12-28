@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Еврейское кладбище</title>
+
+        <link rel="stylesheet" href="src/fonts/fonts.css">
+        <link rel="stylesheet" href="dist/css/styles.css">
+    </head>
+    <body>
+
+      <div class="wrap">  
+        <div class="container">
+          <header class="header">
+            <ul class="header-lang">
+              <li class="header-col">Eng</li>
+              <li class="header-col">Рус</li>
+            </ul>
+            <div class="header-info"> 
+              <p class="header-title">Еврейское кладбище</p>
+              <p class="header-subtitle">уход за еврейскими могилами в санкт-петербурге</p>
+            </div>
+            <div class="header-holder">
+              <nav class="header__nav">
+                  <ul class="header-list">
+                      <li class="header-item">Главная страница</li>
+                      <li class="header-item">Заказ услуг</li>
+                      <li class="header-item">Помощь</li>
+                      <li class="header-item">Перечень могил</li>
+                      <li class="header-item">Законы траура</li>
+                      <li class="header-item">Контакты</li>
+                  </ul>
+              </nav>
+              <button class="header-burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </button>
+            </div>
+          </header>
+          
+          <section class="block">
+            <div class="block-holder">
+             <section class="search">
+              <div class="search-inner">
+                <p class="search-title">Поиск могилы</p>
+                <p class="search-desc">Возможен поиск по неполным данным</p>
+              </div>
+              <div class="search-wrap">
+                <div class="virtual-block">
+                    <img src="src/img/keyboad-inner.png" alt="keyboard">
+                    <p class="virtual-text">Вызов виртуальной <br>клавиатуры</p>
+                </div>
+                <div class="box surname">
+                  <input type="text" class="input">
+                  <label class="label">Фамилия</label>
+                </div>
+                <div class="box initials">
+                  <div class="line">
+                    <input type="text" class="input">
+                    <input type="text" class="input">
+                    </div>
+                  <label class="label onitials">Инициалы</label>
+                </div>
+                <div class="search-date">
+                  <div class="box years">
+                    <input type="text" class="input year">
+                    <label class="label">Год рождения</label>
+                  </div>
+                  <div class="box years">
+                    <input type="text" class="input year">
+                    <label class="label">Год смерти</label>
+                  </div>
+                </div>
+                <div class="btn">Поиск</div>
+                <p class="search-text">Для заказа <br>услуг найдите<br> могилу</p>
+              </div>
+            </section>
+            <div class="block-wrap">
+              <div class="block-item aside">
+                <div class="aside-image">
+                  <img src="src/img/aside/home.jpg" alt="">
+                </div>
+                <div class="aside-socials">
+                  <a class="aside-item" href="tel:+78122090825"> 
+                    <img src="src/img/icons/socials/phone.jpg" alt="phone">
+                    <span>+7 (812) 209-08-25</span>
+                  </a>
+                  <a class="aside-item" href="https://wa.me/79934842734">
+                    <img src="src/img/icons/socials/whatsapp.jpg" alt="whatsapp">
+                   <span>+7 (993) 484-27-34</span>
+                  </a>
+                 </div>
+                <p class="aside-text">Обращение в службу поддержки</p>
+                <p class="aside-text">Адреса кладбищ</p>
+              </div>
+              <div class="block-item content">
+                <p class="block-title">Заказ услуг</p>
+                <div class="block-text">
+                  <p>Ознакомьтесь с <a href="">перечнем услуг</a> и <a href="">условиями оказания услуг</a>.</p>
+                  <p>Для заказа услуг найдите могилу. Чтобы найти могилу, не обязательно заполнять все окна, достаточно любых неполных данных. Возможен поиск и по части фамилии.
+                    <span>*Поиск могилы находится в верхней части страницы.</span></p>
+                  <p>Если вам не удалось найти могилу или самостоятельно заказать услугу, заполните и отправьте форму запроса: мы постараемся вам помочь. <br>После получения заказа мы свяжемся с вами и уточним все необходимые детали.</p>
+                </div>
+                <div class="block-availability"> 
+                  <div class="block-box"> 
+                    <div class="block-image">
+                      <img src="src/img/test.jpg" alt="">
+                    </div>
+                    <div class="block-details"> 
+                      <div class="block-part">  
+                        <a class="block-subtitle">Вайншельбойм Клара Владимировна</a>
+                        <div class="block-inner"> 
+                          <span>(г.р. 1910 - г.с. 1992) </span>
+                          <a class="block-link">Информация и услуги...</a>
+                        </div>
+                      </div>
+                      <div class="block-btn">Убрать из заказа</div>
+                    </div>
+                  </div>
+                </div>
+                <p class="block-info">Нет могил в заказе</p>
+                <div class="btn btn--add">ДОБАВИТЬ ЕЩЕ В ЗАКАЗ НА УХОД</div>
+                <section class="contacts">
+                  <div class="contacts-elem">
+                    <p class="contacts-title">Кто обращается</p>
+                    <div class="box-inner">
+                      <label for="c_name" class="label-inner">Ваше имя*</label>
+                      <input id="c_name" class="input-inner">
+                    </div>
+                    <div class="box-inner">
+                      <label for="c_email" class="label-inner">Email*</label>
+                      <input id="c_email" class="input-inner">
+                    </div>
+                    <div class="box-inner">
+                      <label for="c_address" class="label-inner">Почтовый адрес</label>
+                      <input id="c_address" class="input-inner">
+                    </div>
+                    <div class="box-inner">
+                      <label for="c_phone" class="label-inner">Телефон</label>
+                      <input id="c_phone" class="input-inner">
+                    </div>
+                  </div>
+                  <div class="box-inner box-area">
+                    <textarea class="input-inner area"></textarea>
+                  </div>
+                  <div class="contacts-inner"> 
+                    <div class="virtual-block">
+                      <img src="src/img/keyboard.png" alt="keyboard">
+                      <p class="virtual-text">Вызов виртуальной <br>клавиатуры</p>
+                    </div> 
+                    <button class="btn">Отправить</button>
+                  </div>
+                </section>
+              </div>
+            </div>
+            </div>
+          </section>
+          <footer class="footer"> 
+            <p class="footer-elem">© 2007 - 2022</p>
+          </footer>
+       </div>
+      </div>
+
+<div class="keyboard">
+  <div class="keyboard-head">
+    <span class="keyboard-clear">Clear</span>
+    <strong class="keyboard-close">X</strong>
+  </div>
+  <div class="keyboard-body">
+    <div class="keyboard-wrap">
+        <div class="keyboard-item">1</div>
+        <div class="keyboard-item">2</div>
+        <div class="keyboard-item">3</div>
+        <div class="keyboard-item">4</div>
+        <div class="keyboard-item">5</div>
+        <div class="keyboard-item">6</div>
+        <div class="keyboard-item">7</div>
+        <div class="keyboard-item">8</div>
+        <div class="keyboard-item">9</div>
+        <div class="keyboard-item">0</div>
+        <div class="keyboard-item last">Bksp</div>
+    </div>  
+    <div class="keyboard-wrap">
+        <div class="keyboard-item">Tab</div>
+        <div class="keyboard-item">й</div>
+        <div class="keyboard-item">ц</div>
+        <div class="keyboard-item">у</div>
+        <div class="keyboard-item">к</div>
+        <div class="keyboard-item">е</div>
+        <div class="keyboard-item">н</div>
+        <div class="keyboard-item">г</div>
+        <div class="keyboard-item">ш</div>
+        <div class="keyboard-item">щ</div>
+        <div class="keyboard-item">з</div>
+        <div class="keyboard-item">х</div>
+        <div class="keyboard-item last">ъ</div>
+    </div>
+    <div class="keyboard-wrap">
+        <div class="keyboard-item">Caps</div>
+        <div class="keyboard-item">ф</div>
+        <div class="keyboard-item">ы</div>
+        <div class="keyboard-item">в</div>
+        <div class="keyboard-item">а</div>
+        <div class="keyboard-item">п</div>
+        <div class="keyboard-item">р</div>
+        <div class="keyboard-item">о</div>
+        <div class="keyboard-item">л</div>
+        <div class="keyboard-item">д</div>
+        <div class="keyboard-item">ж</div>
+        <div class="keyboard-item">э</div>
+        <div class="keyboard-item last">Enter</div>
+    </div>  
+    <div class="keyboard-wrap">
+        <div class="keyboard-item">Shift</div>
+        <div class="keyboard-item">я</div>
+        <div class="keyboard-item">ч</div>
+        <div class="keyboard-item">с</div>
+        <div class="keyboard-item">м</div>
+        <div class="keyboard-item">и</div>
+        <div class="keyboard-item">т</div>
+        <div class="keyboard-item">ь</div>
+        <div class="keyboard-item">б</div>
+        <div class="keyboard-item">ю</div>
+        <div class="keyboard-item">.</div>
+        <div class="keyboard-item last">Shift</div>
+    </div> 
+    <div class="keyboard-space"></div> 
+  </div>
+</div>
+        <script src="dist/js/main.js"></script>
+
+    </body>
+</html>
