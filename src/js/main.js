@@ -55,10 +55,10 @@ function openKeyboardForInput() {
 
 document.addEventListener('click', (event) => {
   const keyboard = document.querySelector('.keyboard');
-  const virtualBlocks = document.querySelectorAll('.virtual-block'); // Получаем все .virtual-block
+  const virtualBlocks = document.querySelectorAll('.virtual-block');
   const inputElements = document.querySelectorAll('input, textarea');
 
-  // Проверяем, что клик не был сделан по клавиатуре, ни одному из .virtual-block и ни одному из input/textarea
+
   const clickedOutside = 
     !keyboard.contains(event.target) && 
     !Array.from(virtualBlocks).some(block => block.contains(event.target)) && 
